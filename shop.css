@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 20px;
+  color: rgb(0, 139, 35);
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  text-align: center;
+}
+
+#all_items {
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+/* AVAILABLE PRODUCTS */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-info div {
+  margin: 15px 40px 40px 40px;
+  height: 30vh;
+}
+
+#shop-info h3 {
+  margin: 10px;
+}
+
+#shop-info li {
+  color: rgb(105, 103, 103);
+  margin: 3px 0px 3px 10px;
+}
+
+#shop-info li:hover {
+  color: rgb(0, 139, 35);
+}
+
+/* LIST OF ALL ITEMS */
+.comp_products {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(0, 139, 35);
+  padding: 10px;
+  border-radius: 10px;
+  height: 50vh;
+  width: 50%;
+  margin: 5px 10px;
+}
+
+.comp_products:hover {
+  box-shadow: 5px 5px 5px 5px rgb(39, 138, 55);
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  height: 50vh;
+}
+
+.display_image {
+  width: 20vw;
+  height: 30vh;
+  border-radius: 10px;
+  padding-right: 20px;
+}
+
+.product_description {
+  margin: 20px 5px;
+}
+
+.product_description p {
+  margin: 10px 0px;
+  color: rgb(105, 103, 103);
+}
+
+.product_description form {
+  color: rgb(105, 103, 103);
+}
+
+.des_btn {
+  background-color: rgb(39, 138, 55);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  color: white;
+}
+
+.des_btn:hover {
+  background-color: rgb(209, 174, 140);
+  box-shadow: 5px 5px 5px 5px rgb(39, 138, 55);
+}
+
+.shop_products {
+  height: 55vh;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    color: rgb(56, 54, 54);
+    font-size: 17px;
+  }
+
+  #all_items {
+    padding: 20px;
+  }
+
+  /* AVAILABLE PRODUCTS */
+  h1 {
+    margin-top: 20px;
+  }
+
+  #shop-info {
+    height: 92vh;
+  }
+
+  #list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .comp_products {
+    border: 1px solid rgb(56, 54, 54);
+    /* width: 60%; */
+  }
+
+  .des_btn {
+    background-color: rgb(105, 103, 103);
+  }
+
+  .des_btn:hover {
+    box-shadow: 5px 5px 5px 2px rgb(105, 103, 103);
+  }
+
+  .comp_products:hover {
+    box-shadow: 5px 5px 5px rgb(105, 103, 103);
+  }
+
+  .shop_products {
+    height: 160vh;
+  }
+}

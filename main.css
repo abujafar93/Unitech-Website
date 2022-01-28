@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: unset;
+}
+
+body {
+  color: rgb(56, 54, 54);
+  font-size: 18px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
+  text-align: left;
+}
+
+/* STYLING FOR MAIN FILE */
+
+/* Nav Section Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 5px 30px;
+  color: white;
+  background-color: #808080;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+}
+
+#navbar {
+  list-style: none;
+  display: flex;
+  margin: 5px;
+}
+
+#navbar li {
+  padding: 5px 10px;
+  position: relative;
+}
+
+#navbar li a {
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+  color: rgb(209, 174, 140);
+}
+
+/* Office Info and Images Section Styles */
+.office {
+  height: 42rem;
+  width: 100%;
+  padding: 0px 30px;
+  box-shadow: 0px -5px 10px #808080 inset;
+  background-color: white;
+}
+
+section #officeInfo {
+  padding-top: 30px;
+  width: 100%;
+}
+
+section #officeImages {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section #officeImages img {
+  visibility: hidden;
+}
+
+section #officeInfo button {
+  background-color: grey;
+  padding: 3px 20px;
+  margin: 3px 0px 0px 30px;
+  color: white;
+  border: none;
+  justify-content: flex-end;
+  border-radius: 0px 50% 0px 50%;
+}
+
+section #officeInfo h2 {
+  margin: 25px 0px;
+}
+
+section #officeInfo ul li,
+section #officeInfo h4 {
+  padding-left: 20px;
+  margin: 15px 0px;
+  list-style: none;
+}
+
+/* Product Section Styling */
+.products {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.products h2 {
+  margin: 30px 0px 0px 0px;
+  text-align: center;
+}
+
+.products h3 {
+  text-align: center;
+}
+.pro h3,
+span {
+  font-weight: 600;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro {
+  border: 1px solid #808080;
+  width: 23px;
+  min-width: 250px;
+  margin: 20px 60px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  height: 60vh;
+}
+
+.pro:hover {
+  box-shadow: 5px 5px 5px 5px #808080;
+}
+
+.pro img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.pro .description {
+  margin-top: 10px;
+}
+
+.pro .description p {
+  color: rgb(73, 69, 69);
+}
+
+.pro button {
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+
+.pro button:hover {
+  box-shadow: 5px 5px 5px 5px #808080;
+  background-color: rgb(209, 174, 140);
+}
+
+/* Banners Section Styling */
+section .ban {
+  width: 100%;
+  height: 2vh;
+  background-color: #cccccc;
+  background-image: repeating-radial-gradient(
+    #252525 5%,
+    #ffffff 5%,
+    #808080 10%
+  );
+}
+
+/* Footer Section Styling */
+.footer {
+  height: 28vh;
+  color: #ffffff;
+  background-color: grey;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.footer h3 {
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.footer-info div h3:first-of-type {
+  margin-bottom: 5px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.developer,
+.developer p {
+  text-align: center;
+}
+
+.developer {
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Office Info Section Styling */
+  body {
+    font-size: 20px;
+    color: rgb(0, 139, 35);
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  nav {
+    background-color: rgb(0, 139, 35);
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  #navbar li {
+    padding: 10px 30px;
+  }
+
+  .office {
+    padding: 0 100px;
+    box-shadow: 0px -5px 10px rgb(0, 139, 35) inset;
+    height: 90vh;
+  }
+
+  section #officeInfo {
+    padding-top: 60px;
+  }
+
+  #officeImages img {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  section #officeInfo button {
+    background-color: rgb(0, 139, 35);
+    padding: 5px 30px;
+    margin: 5px 0px 0px 20px;
+  }
+
+  section #officeInfo h2 {
+    margin: 70px 0px 10px 0px;
+  }
+
+  section #officeInfo ul li,
+  section #officeInfo h4 {
+    margin: 20px 0px;
+  }
+
+  /* Product Section Styling */
+  .pro {
+    border: 1px solid rgb(0, 139, 35);
+  }
+
+  .pro:hover {
+    box-shadow: 10px 10px 10px rgb(108, 151, 119);
+  }
+
+  .pro h3,
+  span {
+    color: rgb(0, 139, 35);
+  }
+
+  .pro button {
+    background-color: rgb(0, 139, 35);
+  }
+
+  .pro button:hover {
+    box-shadow: 5px 5px 5px rgb(0, 139, 35);
+  }
+
+  /* Banner Section Styling   */
+  section .ban {
+    height: 5vh;
+    background-color: #cccccc;
+    background-image: repeating-radial-gradient(
+      rgb(0, 255, 98) 5%,
+      #8da77b 5%,
+      rgb(0, 139, 35) 10%
+    );
+  }
+
+  /* Footer Section Styling */
+  .footer {
+    background-color: rgb(0, 139, 35);
+    color: #bfbfbf;
+    padding: 20px 100px;
+  }
+
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+}
